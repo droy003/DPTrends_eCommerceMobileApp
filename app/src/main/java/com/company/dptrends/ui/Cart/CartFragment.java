@@ -78,7 +78,10 @@ public class CartFragment extends Fragment {
         textmsg1 = view.findViewById(R.id.msg1);
         floatingActionButton=view.findViewById(R.id.fab);
 
-        orderStatus = Prevalent.currentOnlineUser.getStatus();
+        if(Prevalent.currentOnlineUser.getStatus() != null){
+            orderStatus = Prevalent.currentOnlineUser.getStatus();
+        }
+
 
 
         return view;

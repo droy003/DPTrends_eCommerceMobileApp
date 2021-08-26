@@ -17,7 +17,7 @@ public class Users {
         this.Phone = phone;
         this.Image = image;
         this.Address = address;
-        this.status=status;
+        this.status  = status;
     }
 
     public String getStatus() {

@@ -135,7 +135,9 @@ public class HomeActivity extends AppCompatActivity {
         CircleImageView profileImageUser = headerView.findViewById(R.id.user_profile_image);
         //String dsf=Prevalent.currentOnlineUser.getImage();
         //String dsfd=Prevalent.currentOnlineUser.getName();
-        userNameTextView.setText(Prevalent.currentOnlineUser.getName());
+        if(Prevalent.currentOnlineUser.getName() != null){
+            userNameTextView.setText(Prevalent.currentOnlineUser.getName());
+        }
         if(Prevalent.currentOnlineUser.getImage() != null){
             if(!Prevalent.currentOnlineUser.getImage().equals(""))
             {
