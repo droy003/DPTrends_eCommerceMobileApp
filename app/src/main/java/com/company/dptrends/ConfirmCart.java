@@ -252,27 +252,29 @@ public class ConfirmCart extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
 
+                                        FirebaseDatabase.getInstance().getReference()
+                                                .child(DBNodes.dbCart)
+                                                .child(Prevalent.currentOnlineUser.getPhone())
+                                                .removeValue()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull @NotNull Task<Void> task) {
+                                                        if(task.isSuccessful()){
+                                                            loadingBar.dismiss();
+                                                            //Prevalent.currentOnlineUser.setStatus(DBNodes.dbOrderPlacedKey);
+                                                            Toast.makeText(ConfirmCart.this, "Order Confirmed Successfully", Toast.LENGTH_SHORT).show();
+                                                            Intent i = new Intent(ConfirmCart.this,HomeActivity.class);
+                                                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                            startActivity(i);
+                                                            finish();
+                                                        }
+                                                    }
+                                                });
+
                                     }
                                 });
 
-                        FirebaseDatabase.getInstance().getReference()
-                                .child(DBNodes.dbCart)
-                                .child(Prevalent.currentOnlineUser.getPhone())
-                                .removeValue()
-                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull @NotNull Task<Void> task) {
-                                        if(task.isSuccessful()){
-                                            loadingBar.dismiss();
-                                            Prevalent.currentOnlineUser.setStatus(DBNodes.dbOrderPlacedKey);
-                                            Toast.makeText(ConfirmCart.this, "Order Confirmed Successfully", Toast.LENGTH_SHORT).show();
-                                            Intent i = new Intent(ConfirmCart.this,HomeActivity.class);
-                                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                            startActivity(i);
-                                            finish();
-                                        }
-                                    }
-                                });
+
 
                     }
                 });

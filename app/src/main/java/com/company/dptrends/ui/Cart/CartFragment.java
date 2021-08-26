@@ -29,6 +29,7 @@ import android.widget.Toolbar;
 
 import com.company.dptrends.ConfirmCart;
 import com.company.dptrends.Model.Cart;
+import com.company.dptrends.Model.Users;
 import com.company.dptrends.Prevalent.DBNodes;
 import com.company.dptrends.Prevalent.Prevalent;
 import com.company.dptrends.R;
@@ -76,17 +77,27 @@ public class CartFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         textmsg1 = view.findViewById(R.id.msg1);
-        floatingActionButton=view.findViewById(R.id.fab);
+        //floatingActionButton=view.findViewById(R.id.fab);
 
-        if(Prevalent.currentOnlineUser.getStatus() != null){
-            orderStatus = Prevalent.currentOnlineUser.getStatus();
-        }
-
-
+        orderStatus();
 
         return view;
     }
 
+    private void orderStatus() {
+        FirebaseDatabase.getInstance().getReference().child(DBNodes.dbUsers).child(Prevalent.currentOnlineUser.getPhone())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        orderStatus = snapshot.child("status").getValue().toString();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+    }
 
 
     @Override
@@ -144,13 +155,6 @@ public class CartFragment extends Fragment {
                                                 @Override
                                                 public void onComplete(@NonNull @NotNull Task<Void> task) {
                                                     Toast.makeText(getActivity(), "Item Removed", Toast.LENGTH_SHORT).show();
-                                                    /*
-                                                    getParentFragmentManager().beginTransaction()
-                                                            .remove(CartFragment.newInstance())
-                                                            .attach(CartFragment.newInstance())
-                                                            .commit();
-
-                                                     */
                                                     Navigation.findNavController(getView()).navigate(R.id.nav_cart);
 
                                                 }
@@ -193,6 +197,7 @@ public class CartFragment extends Fragment {
             else if(orderStatus.equals(DBNodes.dbOrderDeliveredKey) || orderStatus.equals(DBNodes.dbNewOrderKey)){
                 Intent i = new Intent(getActivity(), ConfirmCart.class);
                 i.putExtra("totalPrice",Integer.toString(cartAllProductsPrice));
+
                 startActivity(i);
             }
 
