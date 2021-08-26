@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminDeliveredOrderProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:layout_alignParentTop="true"
+        android:id="@+id/adminDeliveredProducts_relativelayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oder Products"
+            android:textSize="25dp"
+            android:id="@+id/adminDeliveredProducts_title_txt"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adminDeliveredProducts_relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminDeliveredProducts_relativelayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/adminDeliveredProducts_orderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order No: "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/adminDeliveredProducts_moreLessIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_expand_more_24" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/adminDeliveredProducts_relativelayout4"
+            android:layout_below="@+id/adminDeliveredProducts_orderNo"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Status: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_orderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_orderStatus"
+                android:layout_marginTop="5dp"
+                android:text="Order Date: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_orderDate"
+                android:layout_marginTop="5dp"
+                android:text="Total Amount:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_userDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_totalAmount"
+                android:layout_marginTop="5dp"
+                android:text="User Details:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_userDetails"
+                android:layout_marginTop="5dp"
+                android:text="User Name: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_userPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_userName"
+                android:layout_marginTop="5dp"
+                android:text="User Phone: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_userPhone"
+                android:layout_marginTop="5dp"
+                android:text="User Address: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveryDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_userAddress"
+                android:layout_marginTop="5dp"
+                android:text="Delivery Details:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_deliveryDetails"
+                android:layout_marginTop="5dp"
+                android:text="Delivery User Name:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveryPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_deliveryName"
+                android:layout_marginTop="5dp"
+                android:text="Delivery User Phone:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveryAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_deliveryPhone"
+                android:layout_marginTop="5dp"
+                android:text="Delivery Address:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_shippedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_deliveryAddress"
+                android:layout_marginTop="5dp"
+                android:text="Shipped By: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_shippedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_shippedBy"
+                android:layout_marginTop="5dp"
+                android:text="Shipped Date: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveredBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_shippedDate"
+                android:layout_marginTop="5dp"
+                android:text="Delivered By: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adminDeliveredProducts_deliveredDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adminDeliveredProducts_deliveredBy"
+                android:layout_marginTop="5dp"
+                android:text="Delivered Date: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/adminShippedProducts_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminDeliveredProducts_relativelayout4"
+            android:layout_marginTop="20dp"
+            android:text="Items:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminShippedProducts_relativelayout3"
+        android:layout_below="@+id/adminDeliveredProducts_relativelayout2"
+        android:layout_above="@+id/adminDeliveredProducts_deleteButton"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/adminDeliveredProducts_list"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Delete Order"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adminDeliveredProducts_deleteButton"
+        />
+
+</RelativeLayout>

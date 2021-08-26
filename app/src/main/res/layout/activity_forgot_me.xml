@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard1"
+    tools:context=".ForgotMeActivity">
+
+    <ImageView
+        android:id="@+id/forgotMe_applogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logoapp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:id="@+id/forgotMe_phoneNumber_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotMe_applogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="20dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/forgotMe_relativeLayout1"
+        android:layout_below="@id/forgotMe_phoneNumber_input">
+
+        <Button
+            android:id="@+id/forgotMe_verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="15dp"
+            android:text="Verify Phone Number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/forgotMe_relativeLayout2"
+        android:layout_below="@id/forgotMe_phoneNumber_input">
+
+        <EditText
+            android:id="@+id/forgotMe_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Enter New Password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/forgotMe_password_input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotMe_password_input"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/forgotMe_changePassword_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:layout_below="@+id/forgotMe_password_input2"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

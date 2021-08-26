@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Search.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/SearchFragment_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple_200">
+
+        <EditText
+            android:id="@+id/searchFragment_searchText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/input_design"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:hint="Search product name"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/searchFragment_searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/white"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchFragment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/SearchFragment_relativelayout"
+        android:layout_marginTop="0dp" />
+
+</RelativeLayout>

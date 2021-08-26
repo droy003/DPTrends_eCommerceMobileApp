@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.company.dptrends.ui.Home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.company.dptrends.ui.Cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_contactUs"
+        android:name="com.company.dptrends.ui.ContactUs.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.company.dptrends.ui.Search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_order_products"
+        android:name="com.company.dptrends.ui.Orders.OrderProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_order_products" />
+
+    <fragment
+        android:id="@+id/nav_categories_products"
+        android:name="com.company.dptrends.ui.Categories.CategoriesProductFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_categories_product" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.company.dptrends.ui.Orders.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.company.dptrends.ui.Categories.CategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.company.dptrends.ui.Settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.company.dptrends.ui.Logout.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_product_details"
+        android:name="com.company.dptrends.ui.ProductDetails.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details" />
+
+</navigation>

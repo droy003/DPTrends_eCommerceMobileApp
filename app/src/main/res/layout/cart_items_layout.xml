@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:id="@+id/cartitems_cardview"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="15dp">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cartitems_relativelayout_1"
+        android:background="@drawable/input_design"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/cartitems_imageView"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:id="@+id/cartitems_more_vert"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="-4dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+        <TextView
+            android:id="@+id/cartitems_productname_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/cartitems_imageView"
+            android:layout_toStartOf="@+id/cartitems_more_vert"
+            android:text="Product Name"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartitems_productquantity_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cartitems_productname_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:text="Product Quantity"
+            android:textAlignment="viewEnd"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textSize="14dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="viewEnd"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/cartitems_imageView"
+            android:id="@+id/cartitems_productprice_txt"
+            android:layout_below="@id/cartitems_productname_txt"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

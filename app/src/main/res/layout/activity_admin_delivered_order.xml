@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminDeliveredOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:layout_alignParentTop="true"
+        android:id="@+id/adminDeliveredOrder_relativelayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivered Order"
+            android:textSize="25dp"
+            android:id="@+id/adminDeliveredOrder_title_txt"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adminOrder_list"
+        android:layout_below="@+id/adminDeliveredOrder_relativelayout"
+        android:layout_above="@+id/adminDeliveredOrder_ShippedProducts_btn"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Shipped Order"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/adminDeliveredOrder_PlacedOrder_btn"
+        android:id="@+id/adminDeliveredOrder_ShippedProducts_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Placed Order"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adminDeliveredOrder_PlacedOrder_btn"
+        />
+
+</RelativeLayout>

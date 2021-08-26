@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_100"
+        android:id="@+id/userOrderLayout_relativelayout"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/userOrderLayout_orderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Order Number"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/userOrderLayout_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:text="Status: Placed"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: Rs XXXX"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/userOrderLayout_price"
+            android:layout_below="@id/userOrderLayout_orderNo"
+            />
+
+        <TextView
+            android:id="@+id/userOrderLayout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userOrderLayout_price"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Address: lorem ipsum dolor sit"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/userOrderLayout_orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userOrderLayout_address"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Ordered On: XX-XXX-XX"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+
+
+        <Button
+            android:id="@+id/userOrderLayout_showProduct_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userOrderLayout_orderDate"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/white"
+            android:text="Show this order products" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

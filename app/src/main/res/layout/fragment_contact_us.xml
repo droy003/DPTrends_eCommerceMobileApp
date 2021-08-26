@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ContactUs.ContactUsFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactUs_relativeLayout1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactUs_text1"
+                android:text="In Case of any problem, Please contact:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactUs_text2"
+                android:layout_below="@+id/contactUs_text1"
+                android:layout_marginTop="5dp"
+                android:text="Prosen: 9732772747"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactUs_text3"
+                android:layout_below="@+id/contactUs_text2"
+                android:layout_marginTop="20dp"
+                android:text="Or write to us below:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactUs_relativeLayout2"
+            android:layout_below="@+id/contactUs_relativeLayout1"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:maxLength="500"
+                android:padding="75dp"
+                android:hint="Write to us your query"
+                android:id="@+id/contactUs_editText"
+
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons"
+                android:layout_below="@+id/contactUs_editText"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:id="@+id/contactUs_submitButton"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactUs_relativeLayout3"
+            android:layout_below="@+id/contactUs_relativeLayout1"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactUs_text4"
+                android:text="Your Query have been submitted to us.\n Please wait till it is resolved"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

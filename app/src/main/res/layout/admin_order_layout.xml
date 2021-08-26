@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_100"
+        android:id="@+id/adminOrderLayout_relativelayout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/adminOrderLayout_orderNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Order No:"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/adminOrderLayout_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminOrderLayout_orderNo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="User Name:"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/adminOrderLayout_userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminOrderLayout_UserName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="User Phone:"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/adminOrderLayout_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminOrderLayout_userPhone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Order Date:"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/adminOrderLayout_showProduct_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminOrderLayout_dateTime"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/white"
+            android:text="Show this order Details" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

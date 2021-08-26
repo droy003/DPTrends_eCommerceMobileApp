@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_add_new_product.xml" value="0.2" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_categories_products.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_category.xml" value="0.34801136363636365" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_delivered_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_delivered_order_products.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_new_order.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_new_orders_products.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_products_categories.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_shipped_order_products.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_shipped_products.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_admin_user_products.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_confirm_cart.xml" value="0.264" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_forgot_me.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_main.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_main_bypass.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_register.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/activity_search_product.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/admin_add_category_dialog_layout.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/admin_order_layout.xml" value="0.11315789473684211" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/app_bar_home.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/cart_items_layout.xml" value="0.536" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/category_name_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/content_home.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_cart.xml" value="0.24139492753623187" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_categories.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_categories_product.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_contact_us.xml" value="0.264" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_home.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_logout.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_order_products.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_orders.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_product_details.xml" value="0.536" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_search.xml" value="0.5015641293013556" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/fragment_settings.xml" value="0.4" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/nav_header_home.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/product_items_layout.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/search_fragment.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/simple_spinner_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/layout/user_order_layout.xml" value="0.1" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/menu/activity_home_drawer.xml" value="0.536" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/menu/home.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/91704/AndroidStudioProjects/DPTrends/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/91704/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_dropdown_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91704/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_item.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
